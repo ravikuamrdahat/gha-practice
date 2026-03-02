@@ -14,6 +14,8 @@ jobs:
 
             - name: checking current working 
               run: pwd
+            - name: Checking current usser created in server
+              run: cat /etc/passwd
     details:
          runs-on: ubuntu-latest
          steps:
