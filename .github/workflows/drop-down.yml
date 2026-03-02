@@ -1,0 +1,20 @@
+name: Manul drop down
+
+on:
+ workflow_dispatch:
+   inputs:
+     description: "Select the enviorment" 
+       default: dev
+       required: true
+       type: choice 
+       options:
+         - dev
+         - staging
+         - prod
+jobs:
+ deploy:
+  runs-on: ubuntu-latest
+  steps:
+     - name: Show selected envrioement
+       run: echo "Deployment to $ {{ github.input.enviorment }}"
+  
