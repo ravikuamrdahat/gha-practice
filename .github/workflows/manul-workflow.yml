@@ -1,0 +1,10 @@
+name: Manual-hello
+
+on:
+ workflow_dispatch:
+
+jobs:
+ hello-job:
+   runs-on: ubuntu-latest
+   steps:
+     - run: echo" Hello !, I was run manulyy"
