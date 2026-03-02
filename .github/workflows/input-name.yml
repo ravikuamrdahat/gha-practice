@@ -1,0 +1,16 @@
+name: Input user name
+
+on:
+ workflow_dispatch:
+    inputs:
+       username:
+         description: "Enter your name Please"
+         required: true
+         default: "Ravi"
+jobs:
+ greet:
+   runs-on: ubuntu-latest
+   steps:
+     - name: print user input name
+       run: echo " Hello ${{ github.event.inputs.username }}"
+         
