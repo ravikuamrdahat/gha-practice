@@ -16,6 +16,12 @@ jobs:
               run: pwd
             - name: Checking current usser created in server
               run: cat /etc/passwd
+            - name: multi command steps
+              run: |
+                echo "Starting the script"
+                psw
+                ls -la
+                echo "End of script
         
     details:
          runs-on: ubuntu-latest
