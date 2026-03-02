@@ -1,0 +1,11 @@
+name: Auto+ Manual
+
+on:
+  push:
+  workflow_dispatch:
+jobs:
+ demo:
+   runs-on: ubuntu-latest
+   steps:
+     - namme: Print the name only
+       run: echo " Trigger"
