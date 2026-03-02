@@ -17,5 +17,5 @@ jobs:
   runs-on: ubuntu-latest
   steps:
      - name: Show selected envrioement
-       run: echo "Deployment to $ {{ github.input.enviorment }}"
+       run: echo "Deployment to $ {{ github.event.input.environment }}"
   
