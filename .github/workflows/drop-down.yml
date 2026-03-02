@@ -3,11 +3,12 @@ name: Manul-drop-down
 on:
  workflow_dispatch:
    inputs:
+    enviorment:
      description: "Select the enviorment" 
-       default: dev
-       required: true
-       type: choice 
-       options:
+     default: dev
+     required: true
+     type: choice 
+     options:
          - dev
          - staging
          - prod
