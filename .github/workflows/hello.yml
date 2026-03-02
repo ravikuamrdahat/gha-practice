@@ -8,3 +8,6 @@ jobs:
          steps:
             - name: Say hello to user
               run: echo " Hello Ravi"
+
+            - name: Say good by to evey one
+              run: uptime
