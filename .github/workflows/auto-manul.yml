@@ -7,5 +7,5 @@ jobs:
  demo:
    runs-on: ubuntu-latest
    steps:
-     - namme: Print the name only
+     - name: Print the name only
        run: echo " Trigger"
