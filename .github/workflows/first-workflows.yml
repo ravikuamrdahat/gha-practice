@@ -1,0 +1,11 @@
+name: GitHub Action via VS
+
+on: push
+
+jobs:
+     hello-job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: print the messages
+              run: echo " Hello Ravikumar"
