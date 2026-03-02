@@ -16,6 +16,8 @@ jobs:
               run: pwd
             - name: Checking current usser created in server
               run: cat /etc/passwd
+            - uses: action/checkout@v4
+              run: ls -la
     details:
          runs-on: ubuntu-latest
          steps:
