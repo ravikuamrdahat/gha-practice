@@ -21,7 +21,7 @@ jobs:
                 echo "Starting the script"
                 pwd
                 ls -la
-                echo "End of script
+                echo "End of script"
         
     details:
          runs-on: ubuntu-latest
