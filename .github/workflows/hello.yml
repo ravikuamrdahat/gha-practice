@@ -11,7 +11,7 @@ jobs:
 
             - name: Say good by to evey one
               run: uptime
-     details:
+    details:
          runs-on: ubuntu-latest
          steps:
              - name: version of docker and python
