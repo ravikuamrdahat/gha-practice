@@ -7,4 +7,4 @@ jobs:
  hello-job:
    runs-on: ubuntu-latest
    steps:
-     - run: echo" Hello !, I was run manulyy"
+     - run: echo "Hello !, I was run manulyy"
