@@ -14,7 +14,7 @@ on:
          - prod
 jobs:
  deploy:
-  runs-on: ubuntu-latest
+  runs-on: self-hosted
   steps:
      - name: Show selected envrioement
        run: echo "Deployment to $ {{ github.event.inputs.environment }}"
