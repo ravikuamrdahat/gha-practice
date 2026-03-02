@@ -1,6 +1,9 @@
 name: Hello-GitAction
 
-on: push
+on:
+ push:
+  branches:
+    - main
 
 jobs:
     greet:
