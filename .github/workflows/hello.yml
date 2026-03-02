@@ -19,7 +19,7 @@ jobs:
             - name: multi command steps
               run: |
                 echo "Starting the script"
-                psw
+                pwd
                 ls -la
                 echo "End of script
         
