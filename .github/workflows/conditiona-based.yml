@@ -18,11 +18,11 @@ jobs:
 
       steps:
         - name: If enviroment is dev
-          if: ${{ github.event.inputs.environment == "dev" }}
-          run: echo " Deployment is done under Dev"
+          if: ${{ github.event.inputs.environment == 'dev' }}
+          run:  echo "Deployment is done under Dev "
         - name:  If enivorment is stage
-          if: ${{ github.event.inputs.environment == "stage" }}
+          if: ${{ github.event.inputs.environment == 'stage' }}
           run: echo " Deployment is under stage"
         - name: if enviorment is stage
-          if: ${{ github.event.input.environment == "prod" }}
+          if: ${{ github.event.input.environment == 'prod' }}
           run: echo  "Deplpyment done under prod"
