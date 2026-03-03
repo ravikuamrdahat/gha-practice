@@ -16,4 +16,4 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: deploy the step
-       run: echo " Deplpyment to  ${{ github.event.inputs.environment }}
+       run: echo " Deplpyment to  ${{ github.event.inputs.environment }}"
