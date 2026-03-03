@@ -8,6 +8,9 @@ on:
       default:  dev
       required: true
       description:  " Please select enviorment"
+      options:
+        - dev
+        - prod
 jobs:
   deploy:
    runs-on: ubuntu-latest
