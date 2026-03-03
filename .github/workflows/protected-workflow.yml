@@ -1,0 +1,16 @@
+name: ProtectedWorkflow
+
+on:
+ workflow_dispatch:
+   inputs:
+     environment:
+      type: choice
+      default:  dev
+      required: true
+      description:  " Please select enviorment"
+jobs:
+  deploy:
+   runs-on: ubuntu-latest
+   steps:
+     - name: deploy the step
+       run: echo " Deplpyment to  ${{ github.event.inputs.environment }}
